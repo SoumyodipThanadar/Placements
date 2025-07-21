@@ -1,0 +1,236 @@
+/* 
+Prime number check
+
+Armstrong number
+
+Factorial
+
+Palindrome number
+
+GCD & LCM
+
+Fibonacci series
+
+Sum of digits
+
+Perfect number
+ */
+
+//Prime Number
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a,i,c=0;
+        System.out.println("Enter the number:");
+        a=sc.nextInt();
+        for(i=1;i<=a;i++)
+        {
+            if(a%i==0)
+            c++;
+        }
+        if(c==2)
+        System.out.println("Prime Number");
+        else
+        System.out.println("Not a Prime Number");
+        
+    }
+}*/
+
+//Armstrong Number
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a, b,s=0;
+        System.out.println("Enter the number:");
+        a=sc.nextInt();
+        int k=a;
+        while(a>0)
+        {
+            b=a%10;
+            s=s+(b*b*b);
+            a=a/10;
+        }
+        if(s==k)
+        System.out.println("Armstrong Number");
+        else
+        System.out.println("Not a Armstrong Number");
+        
+    }
+}*/
+
+//palindrome Number
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a, b,s=0;
+        System.out.println("Enter the number:");
+        a=sc.nextInt();
+        int k=a;
+        while(a>0)
+        {
+            b=a%10;
+            s=s*10+b;
+            a=a/10;
+        }
+        if(s==k)
+        System.out.println("Plaindrome Number");
+        else
+        System.out.println("Not a Plaindrome Number");
+        
+    }
+}*/
+
+
+//Sum of Digits
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a, b,s=0;
+        System.out.println("Enter the number:");
+        a=sc.nextInt();
+        
+        while(a>0)
+        {
+            b=a%10;
+            s=s+b;
+            a=a/10;
+        }
+        
+        System.out.println("sum of digits:" + s);        
+    }
+}*/
+
+
+//Perfect Number
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int i,s=0;
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        
+        for(i=1;i<a;i++)
+        {
+            if(a%i==0)
+            s=s+i;
+        }
+        if(s==a)
+        
+        
+        System.out.println("Perfect Number:");  
+        else
+        System.out.println("Not a Perfect Number:");
+    }}*/
+    
+    
+    
+//Factorial Number
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int i;
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        int f =1;
+        for(i=1;i<=a;i++)
+        {
+            f=f*i;
+        }
+        
+        
+        
+        System.out.println("Fcatorial Number of " + a +"is = "+f);  
+        
+    }}*/
+    
+//Fibonacci Series
+
+/*import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Enter the number:");
+        
+        n=sc.nextInt();
+        
+        int a=0,b=1,c;
+        System.out.println(a+""+b+"");
+        
+        for(int i=2;i<n;i++)
+        {
+            c=a+b;
+            System.out.print(c+"");
+            a=b;
+            b=c;
+        }
+    }
+}*/
+
+//GCD & LCM
+import java.util.*;
+public class Number_Scope
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a,b;
+        System.out.println("Enter the number1:");
+        a=sc.nextInt();
+        System.out.println("Enter the number2:");
+        
+        b=sc.nextInt();
+        
+        int x=a;
+        int y=b;
+        
+        while(b!=0)
+        {
+            int temp = b;
+            b=a%b;
+            a=temp;
+        }
+        
+        int gcd=a;
+        int lcm=(x*y)/gcd;
+        System.out.println("gcd" + gcd);
+        System.out.println("lcm" + lcm);
+    }
+}
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+
