@@ -1,0 +1,69 @@
+/*class ab
+{
+    public static void main(String args[])
+    {
+        String name = "Soumyodip";
+        String fullname = "Soumyodip Thanadar";
+        String sentence = "My name is Dip";
+        
+        System.out.println("Name : " + name);
+        System.out.println("Full Name: " + fullname);
+        System.out.println("Sentence: " + sentence);
+    }
+}*/
+
+/*import java.util.*;
+public class String_Scope{
+    
+
+public static void main(String args[])
+{
+    Scanner sc = new Scanner(System.in);
+    String a;
+    System.out.println("Enter the Name");
+    a= sc.nextLine();
+    System.out.println("s"+a);
+}
+}*/
+import java.util.*;
+public class String_Scope
+{
+public static void main(String args[])
+{
+    Scanner sc = new Scanner(System.in);
+    String a;
+    String b;
+    a="s";
+    b="b";
+    String c = a+ "@" +b;
+    System.out.println(c.length());
+    
+    
+    
+    for(int i=0;i<c.length();i++)
+    System.out.println(c.charAt(i));
+    
+    
+    String apple = "Doctors away";
+    String name1="Tony";
+    String name2="Tony";
+    /*if(name1.compareTo(name2)==0)
+    System.out.println("both strings are equal");
+    else
+    System.out.println("both strings are not equal");*/
+    if(name1 == name2)
+    System.out.println("both strings are equal");
+    else
+    System.out.println("both strings are not equal");
+    
+    /*String substringe = apple.substring(11, apple.length());
+    String substringee = apple.substring(0,6);*/
+    char substring = apple.charAt(7);
+    //System.out.println(substringe);
+    //System.out.println(substringee);
+    
+    System.out.println(substring);
+    
+    
+}
+}
